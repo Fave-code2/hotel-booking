@@ -15,297 +15,287 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <aside>
-      <div class="logo">
-        <img src="./assets/images/logo.svg" alt="logo" />
-      </div>
+    <section class="body">
+      <aside>
+        <div class="logo">
+          <img src="./assets/images/logo.svg" alt="logo" />
+        </div>
 
-      <section>
         <nav>
           <ul>
-            <li>
-              <a href="#">
-                <span>
-                  <img src="./assets/images/icon-bed.svg" alt="icon-bed" />
-                  Your Stay
-                </span>
-
-                <span class="notification">1</span>
-              </a>
+            <li class="nav-item active">
+              <img src="./assets/images/icon-bed.svg" alt="icon-bed" />
+              <span class="label">Your stay</span>
+              <span class="badge">1</span>
             </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/icon-house.svg" alt="icon-house" />
-
-                The House
-              </a>
+            <li class="nav-item">
+              <img src="./assets/images/icon-house.svg" alt="icon-house" />
+              <span> The House </span>
             </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/icon-pin.svg" alt="icon-pin" />
-
-                Around Town
-              </a>
+            <li class="nav-item">
+              <img src="./assets/images/icon-pin.svg" alt="icon-pin" />
+              <span> Around Town </span>
             </li>
-            <li>
-              <a href="#">
-                <img
-                  src="./assets/images/icon-breakfast-outline.svg"
-                  alt="icon-breakfast"
-                />
-
-                Breakfast
-              </a>
+            <li class="nav-item">
+              <img
+                src="./assets/images/icon-breakfast-outline.svg"
+                alt="icon-breakfast"
+              />
+              <span> Breakfast </span>
             </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/icon-mail.svg" alt="icon-mail" />
-
-                Messages
-              </a>
+            <li class="nav-item">
+              <img src="./assets/images/icon-mail.svg" alt="icon-mail" />
+              <span> Messages </span>
             </li>
           </ul>
         </nav>
 
-        <div>
-          <p>Today in Cassis</p>
+        <section>
+          <div class="degree">
+            <div class="sunshine">
+              <p>Today in Cassis</p>
 
-          <h2>27°</h2>
+              <img src="./assets/images/icon-weather.svg" alt="" />
 
-          <p>Sunny · light breeze</p>
-        </div>
-      </section>
+              <h2>27°</h2>
 
-      <div>
-        <p>Est. 1987</p>
+              <p>Sunny · light breeze</p>
+            </div>
+          </div>
 
-        <p>
-          Maison Soleil · 12 Rue des <br />
-          Oliviers · Cassis
-        </p>
+          <div class="bottom-aside">
+            <p>Est. 1987</p>
+            <p>
+              Maison Soleil · 12 Rue des <br />
+              Oliviers · Cassis
+            </p>
+            <p>© 2026 Maison Soleil</p>
+          </div>
+        </section>
+      </aside>
 
-        <p>© 2026 Maison Soleil</p>
-      </div>
-    </aside>
+      <main>
+        <header>
+          <div>
+            <p>Booking · Confirmed</p>
 
-    <main>
-      <header>
-        <div>
-          <p>Booking · Confirmed</p>
+            <h1>Bienvenue, <em class="heading-color">Lucia.</em></h1>
+          </div>
 
-          <h1>Bienvenue, <span class="heading-color">Lucia.</span></h1>
-        </div>
+          <div class="buttons">
+            <button type="button">Print receipt</button>
+            <button type="button">Add to calendar</button>
+          </div>
+        </header>
 
-        <div class="buttons">
-          <button type="button">Print receipt</button>
-          <button type="button">Add to calendar</button>
-        </div>
-      </header>
-
-      <!-- Booking cards start -->
-      <section class="hero">
-        <div class="container">
-          <!-- Receipt card -->
-          <div class="left-card">
-            <div>
-              <div class="left-card-head">
-                <div>
-                  <p>Receipt</p>
-
-                  <h3>Your stay</h3>
-                </div>
-                <div>
-                  <p>№ MS-2026</p>
-                  <p>0421-AH</p>
-                </div>
-              </div>
-
+        <!-- Booking cards start -->
+        <section class="hero">
+          <div class="container">
+            <!-- Receipt card -->
+            <div class="left-card">
               <div>
-                <div class="check-in">
-                  <p>check-in</p>
-                  <h2>25 Apr</h2>
-                  <p>Saturday · 15:00</p>
-                </div>
-                <div class="check-out">
-                  <p>check-out</p>
-                  <h2>29 Apr</h2>
-                  <p>Wednesday · 11:00</p>
-                </div>
-              </div>
-
-              <div class="price">
-                <div>
-                  <p>Room · La Garrigue · 4 nights</p>
-                  <p>€ 620.00</p>
-                </div>
-                <div>
-                  <p>Breakfast x 2 guests</p>
-                  <p>€ 96.00</p>
-                </div>
-                <div>
-                  <p>Tourist tax</p>
-                  <p>€ 14.40</p>
-                </div>
-
-                <!-- Total -->
-                <div class="total">
-                  <div class="total-price">
-                    <p>Total paid</p>
-                    <p>€ 730.40</p>
-                  </div>
-
+                <div class="left-card-head">
                   <div>
-                    <p>Paid · Wise · GBP</p>
+                    <p>Receipt</p>
 
-                    <!-- Barcode image -->
-                    <img
-                      src="./assets/images/icon-barcode.svg"
-                      alt="icon-barcode"
-                    />
+                    <h3>Your stay</h3>
+                  </div>
+                  <div>
+                    <p>№ MS-2026</p>
+                    <p>0421-AH</p>
+                  </div>
+                </div>
+
+                <div class="booking-dates">
+                  <div class="check-in">
+                    <p>check in</p>
+                    <h2>25 Apr</h2>
+                    <p>Saturday · 15:00</p>
+                  </div>
+                  <div class="check-out">
+                    <p>check out</p>
+                    <h2>29 Apr</h2>
+                    <p>Wednesday · 11:00</p>
+                  </div>
+                </div>
+
+                <div class="price">
+                  <div class="first">
+                    <p>Room · La Garrigue x 4 nights</p>
+                    <p>€ 620.00</p>
+                  </div>
+                  <div class="second">
+                    <p>Breakfast x 2 guests</p>
+                    <p>€ 96.00</p>
+                  </div>
+                  <div class="third">
+                    <p>Tourist tax</p>
+                    <p>€ 14.40</p>
+                  </div>
+
+                  <!-- Total -->
+                  <div class="total">
+                    <div class="total-price">
+                      <p>Total paid</p>
+                      <p>€ 730.40</p>
+                    </div>
+
+                    <div class="confirmation">
+                      <p>Paid · Wise · GBP</p>
+
+                      <!-- Barcode image -->
+                      <img
+                        src="./assets/images/icon-barcode.svg"
+                        alt="icon-barcode"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="sun">
-            <img
-              src="./assets/images/illustration-sun.svg"
-              alt="illustration-sun"
-            />
-          </div>
-
-          <!-- Note from host card -->
-          <div class="right-card">
-            <div class="right-card-head">
-              <h4>Welcome card</h4>
-
-              <img src="./assets/images/icon-sun.svg" alt="icon-sun" />
+            <div class="sun">
+              <img
+                src="./assets/images/illustration-sun.svg"
+                alt="illustration-sun"
+              />
             </div>
 
-            <div>
-              <p>A note from your host,</p>
+            <!-- Note from host card -->
+            <div class="right-card">
+              <div class="right-card-head">
+                <h4>Welcome card</h4>
 
-              <h2>Margaux.</h2>
+                <img src="./assets/images/icon-sun.svg" alt="icon-sun" />
+              </div>
 
-              <p class="welcome-msg">
-                We're so glad you're coming. The shutters will be open, the
-                lemonade cold, and the cat - Poivre - pretending not to notice
-                you.
+              <div class="right-card-body">
+                <p><em>A note from your host,</em></p>
+
+                <h2><em>Margaux.</em></h2>
+
+                <p class="welcome-msg">
+                  We're so glad you're coming. The shutters will be open, the
+                  lemonade cold, and the cat - Poivre - pretending not to notice
+                  you.
+                </p>
+              </div>
+
+              <div class="right-card-bottom">
+                <p>Room</p>
+
+                <h3>La Garrigue</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="hover-to-fan">
+            <img src="./assets/images/icon-sparkle.svg" alt="" />
+            <p>Hover to fan</p>
+            <img src="./assets/images/icon-sparkle.svg" alt="" />
+          </div>
+        </section>
+        <!-- Booking cards end -->
+
+        <!-- Guest info row starts -->
+        <section class="main-footer">
+          <!-- Arrival -->
+          <div class="guest-section">
+            <div class="head">
+              <div class="arrival">
+                <div>
+                  <img class="img" src="./assets/images/icon-key.svg" alt="" />
+                </div>
+                <p>Arrival</p>
+              </div>
+
+              <p class="arrival number">01</p>
+            </div>
+
+            <div class="hero">
+              <h3>Check-in from 15:00</h3>
+              <p>Sat, 25 April</p>
+            </div>
+
+            <div class="footer">
+              <p>
+                Ring the brass bell by the blue door. If we're at the market,
+                the key is in the terracotta pot by the olive tree.
               </p>
             </div>
-
-            <div>
-              <p>Room</p>
-
-              <h3>La Garrigue</h3>
-            </div>
           </div>
-        </div>
 
-        <div class="hover-to-fan">
-          <img src="./assets/images/icon-sparkle.svg" alt="" />
-          <p>Hover to fan</p>
-
-          <img src="./assets/images/icon-sparkle.svg" alt="" />
-        </div>
-      </section>
-      <!-- Booking cards end -->
-
-      <!-- Guest info row starts -->
-      <section class="footer">
-        <!-- Arrival -->
-        <div class="arrival">
-          <div class="arrival-head">
-            <div>
-              <div>
-                <img src="./assets/images/icon-key.svg" alt="" />
+          <!-- Wifi -->
+          <div class="guest-section">
+            <div class="head">
+              <div class="wifi">
+                <div>
+                  <img
+                    class="img"
+                    src="./assets/images/icon-wifi.svg"
+                    alt="icon-wifi"
+                  />
+                </div>
+                <p>Wifi</p>
               </div>
-              <p>Arrival</p>
+
+              <p class="wifi number">02</p>
             </div>
 
-            <p class="arrival-number">01</p>
-          </div>
+            <div class="hero">
+              <h3>Le Soleil · Guest</h3>
+              <p>Password below</p>
+            </div>
 
-          <div class="arrival-hero">
-            <h2>Check-in from 15:00</h2>
-            <p>Sat, 25 April</p>
-          </div>
-
-          <div class="arrival-footer">
-            <p>
-              Ring the brass bell by the blue door. If we're at the market, the
-              key is in the terracotta pot by the olive tree.
-            </p>
-          </div>
-        </div>
-
-        <!-- Wifi -->
-        <div class="wifi">
-          <div class="wifi-head">
-            <div>
-              <div>
-                <img src="./assets/images/icon-wifi.svg" alt="icon-wifi" />
+            <div class="footer">
+              <div class="wifi-network">
+                <p>Network</p>
+                <p>Le Soleil · Guest</p>
               </div>
-              <p>Wifi</p>
-            </div>
-
-            <p class="wifi-number">02</p>
-          </div>
-
-          <div class="wifi-hero">
-            <h2>Le Soleil · Guest</h2>
-            <p>Password below</p>
-          </div>
-
-          <div class="wifi-footer">
-            <div class="wifi-network">
-              <p>Network</p>
-              <p>Le Soleil · Guest</p>
-            </div>
-            <div class="wifi-password">
-              <p>Password</p>
-              <div class="wifi-password-copy">
-                <p>soleil-2026</p>
-                <button>Copy</button>
+              <div class="wifi-password">
+                <p>Password</p>
+                <div class="wifi-password-copy">
+                  <p>soleil-2026</p>
+                  <button>Copy</button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Breakfast -->
-        <div class="breakfast">
-          <div class="breakfast-head">
-            <div>
-              <div>
-                <img
-                  src="./assets/images/icon-breakfast.svg"
-                  alt="icon-breakfast"
-                />
+          <!-- Breakfast -->
+          <div class="guest-section">
+            <div class="head">
+              <div class="breakfast">
+                <div>
+                  <img
+                    src="./assets/images/icon-breakfast.svg"
+                    alt="icon-breakfast"
+                  />
+                </div>
+                <p>Breakfast</p>
               </div>
-              <p>Breakfast</p>
+
+              <p class="breakfast number">03</p>
             </div>
 
-            <p class="breakfast-number">03</p>
-          </div>
+            <div class="hero">
+              <h3>Served 8 - 10:30</h3>
+              <p>On the terrace</p>
+            </div>
 
-          <div class="breakfast-hero">
-            <h2>Served 8 - 10:30</h2>
-            <p>On the terrace</p>
+            <div class="footer">
+              <p>
+                Fresh figs, Marseille honey, pain au levain, and espresso.
+                Gluten-free option? Leave a note the night before.
+              </p>
+            </div>
           </div>
+        </section>
+        <!-- Guest info row ends -->
+      </main>
 
-          <div class="breakfast-footer">
-            <p>
-              Fresh figs, Marseille honey, pain au levain, and espresso.
-              Gluten-free option? Leave a note the night before.
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- Guest info row ends -->
-    </main>
-
-    <!-- Main content ends -->
+      <!-- Main content ends -->
+    </section>
 
     <footer class="attribution">
       Challenge by
