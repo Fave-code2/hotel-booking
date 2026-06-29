@@ -59,7 +59,7 @@ aside {
   display: flex;
   flex-direction: column;
   width: 25%;
-  overflow-y: hidden;
+  overflow-y: visible;
   padding: 1rem;
   border-right: 1px solid var(--Print-text);
 
@@ -469,7 +469,7 @@ header .buttons button:last-child {
 .guest-section {
   padding: 1rem;
   background-color: var(--Neutral-50);
-  box-shadow: 0px 5px 18px var(--Calander);
+  box-shadow: 0px 0px 10px 0px var(--Calander);
   width: 33.3%;
   border-radius: 1rem;
   color: var(--Neutral-600);
@@ -490,6 +490,7 @@ header .buttons button:last-child {
   & p {
     text-transform: uppercase;
     font-size: 12px;
+    font-weight: 600;
   }
 }
 
@@ -616,8 +617,11 @@ header .buttons button:last-child {
 }
 
 .attribution {
-  text-align: center;
   margin-bottom: 1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 .mobile-logo {
@@ -639,6 +643,7 @@ footer p {
   .body {
     flex-direction: column;
   }
+
   .hidden {
     display: none;
   }
@@ -647,15 +652,16 @@ footer p {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 100vh;
-    overflow-y: visible;
+    height: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
 
     & .logo {
       position: sticky;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       top: 0;
-      z-index: 10;
       background: var(--Body-bg);
       width: calc(
         100% + 2rem
@@ -663,7 +669,7 @@ footer p {
       margin-left: -1rem;
       padding-left: 1rem;
       padding-right: 1rem;
-      padding-top: 0.8rem;
+      margin-top: -0.2rem;
       z-index: 1000;
 
       .close {
@@ -671,15 +677,18 @@ footer p {
       }
     }
 
-    .degree {
-      position: relative;
-      z-index: -10;
-    }
-
     nav {
       flex: 1;
       margin: 0;
       padding-top: 0.5rem;
+    }
+
+    .degree {
+      position: relative;
+    }
+
+    & .sunshine {
+      margin-top: auto;
     }
   }
 
@@ -703,7 +712,7 @@ footer p {
       width: 100%;
       z-index: 9;
       background: var(--Body-bg);
-      padding: 0.8rem 1rem;
+      padding: 0.8rem 1rem 0.8rem;
       border-bottom: 1px solid var(--Calander);
     }
 
