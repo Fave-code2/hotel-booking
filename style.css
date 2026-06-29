@@ -66,6 +66,10 @@ aside {
   & .logo {
     padding-bottom: 0.8rem;
     border-bottom: 1px solid;
+
+    .close {
+      display: none;
+    }
   }
 
   & nav {
@@ -170,7 +174,7 @@ aside {
 }
 
 main {
-  width: 70%;
+  width: 73%;
   padding: 2rem 0 1.2rem 1.5rem;
 }
 
@@ -459,11 +463,13 @@ header .buttons button:last-child {
   align-items: center;
   gap: 1rem;
   width: 100%;
+  margin-top: 2rem;
 }
 
 .guest-section {
   padding: 1rem;
   background-color: var(--Neutral-50);
+  box-shadow: 0px 5px 18px var(--Calander);
   width: 33.3%;
   border-radius: 1rem;
   color: var(--Neutral-600);
@@ -612,4 +618,140 @@ header .buttons button:last-child {
 .attribution {
   text-align: center;
   margin-bottom: 1rem;
+}
+
+.mobile-logo {
+  display: none;
+}
+
+footer p {
+  color: var(--Calander);
+  font-weight: 600;
+  margin-top: 0.5rem;
+
+  span {
+    text-transform: uppercase;
+    color: var(--Lucia);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .body {
+    flex-direction: column;
+  }
+  .hidden {
+    display: none;
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: visible;
+
+    & .logo {
+      position: sticky;
+      display: flex;
+      justify-content: space-between;
+      top: 0;
+      z-index: 10;
+      background: var(--Body-bg);
+      width: calc(
+        100% + 2rem
+      ); /* cancel out aside's 1rem padding on each side */
+      margin-left: -1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 0.8rem;
+      z-index: 1000;
+
+      .close {
+        display: block;
+      }
+    }
+
+    .degree {
+      position: relative;
+      z-index: -10;
+    }
+
+    nav {
+      flex: 1;
+      margin: 0;
+      padding-top: 0.5rem;
+    }
+  }
+
+  header {
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    width: 100%;
+
+    & div {
+      width: 100%;
+    }
+
+    .mobile-logo {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9;
+      background: var(--Body-bg);
+      padding: 0.8rem 1rem;
+      border-bottom: 1px solid var(--Calander);
+    }
+
+    .buttons {
+      justify-content: space-around;
+      width: 100%;
+      margin-bottom: 0.5rem;
+
+      & button {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  main {
+    width: 100%;
+    padding: 4.8rem 1rem 1rem;
+    /* display: none; */
+  }
+
+  .sun,
+  .hover-to-fan {
+    display: none;
+  }
+
+  .container {
+    flex-direction: column-reverse;
+    width: 100%;
+    height: auto;
+    gap: 1.8rem;
+    margin: 1.5rem auto 0;
+  }
+
+  .left-card,
+  .right-card {
+    position: relative;
+    width: min(90vw, 370px);
+    height: auto;
+    min-height: 420px;
+    margin: auto;
+  }
+
+  .main-footer {
+    flex-direction: column;
+    margin-top: 3rem;
+
+    & .guest-section {
+      width: 100%;
+    }
+  }
 }
